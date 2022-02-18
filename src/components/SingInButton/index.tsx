@@ -7,8 +7,6 @@ import styles from './styles.module.scss'
 export function SingInButton() {
   const { data: session, status} = useSession()
 
-  console.log(session)
-
   return status === "authenticated" ? (
     <button 
       type="button"
